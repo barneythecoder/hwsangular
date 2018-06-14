@@ -1,0 +1,292 @@
+body{
+    min-width: 1366px;
+    }
+body>nav{
+    position: fixed;
+    z-index:1;
+}
+
+.blktext{
+    color:#000;
+}
+.whttext{
+    color: #fff;
+}
+
+/******************************************
+    HEADER 
+*******************************************/
+
+nav.index_nav{ 
+    height: 135px!important;
+    padding: 20px 0;
+    min-width: 1366px;
+    position: fixed;
+    z-index:1000;
+}
+.nav-list a{
+    color:#000!important;
+    font-family: loveloblack;
+}
+
+img#HWS_logo_candy{
+    width: 100px;
+}
+
+.line{
+    background-color: #000;
+    height: 1px;
+    margin-top: 30px;
+}
+
+#unscrolled-header{
+    display: block;
+}
+#logo{
+    margin-left:20px;
+}
+.vl{
+    border-left: 1px solid #DBDBDB;
+    height: 50px;
+    margin: 0 20px;
+}
+.social-media img{
+    margin: 0 10px;
+}
+
+.for-shopping a{
+    margin: 0 20px;
+}
+/******************************************/
+div.index-cont-one{
+}
+
+div.index-cont-two{
+    background-color:#fff;
+}
+
+div.index-cont-three{
+    background-color:#1582D0;
+}
+div.index-cont-three p{
+margin-top:0!important;
+}
+
+.index-right{
+    float: right;
+    top:50%;
+    right: 16px;
+}
+
+.index{
+    background-color: #ECECEC;  
+}
+.product{
+    background-color: #fff;
+}
+.link-earn-candy{
+    color: #5A99E3;
+    font-family: loveloline;
+    font-size:45px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.img-promo{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+/******************************************
+    PRODUCT PANEL
+*******************************************/
+.product-icon-hover{
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    height: 100vh;
+    top: 0;    
+    left: 0;
+    width: 25%;
+    z-index: -1;
+}
+
+.product-title{
+    font-family: loveloblack;
+    font-size: 20px;
+    color:#737373;
+    margin: 20PX 0 10px 0px;
+}
+
+.product-list{
+    font-family: loveloblack;
+    font-size: 15px;
+}
+.product-list li{
+    margin: 5px 0 5px 0px;
+    line-height: 30px;
+}
+
+.product-list li a{
+    color:#737373;
+}
+/***********************************************************/
+
+/******************************************
+    MORE THAN EYE CANDY PANEL
+*******************************************/
+.candy-sec{
+    background-color: #1582D0; 
+    height: 100vh;
+}
+.candy-sec ul{
+    margin-left: 45px;
+}
+.candy-sec ul li{
+    margin: 10px 0 10px 0;
+    font-family: robotomedium;
+    font-size: 20px;
+    line-height: 30px;
+}
+.candy-title{
+    width: 95%;
+    font-size: 85px;
+    position: relative;
+    font-family: loveloblack;
+    line-height: normal;
+    margin: 0;
+}
+.candy-text{
+    width: 75%;
+    font-family: robotolight;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.candy-img{
+    min-width: 1366px;
+}
+
+.btn-flat{
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    color:#fff!important;
+    width: 75%;
+    border-radius: 25px;
+    font-family: loveloblack;
+    font-size:20px;
+}
+
+/**************************************************************/
+
+
+
+/**************************************************************/
+#mon-hover, #key-hover, 
+#graph-card-hover, 
+#ssd-hover, #mobo-hover,
+#mice-hover, #etc-hover,
+#psu-hover, #memory-hover,
+#cpu-hover, #candy-hover {
+    opacity: 0;
+}
+
+#mon .mon_color,
+#key .key_color,
+#psu .psu_color,
+#ssd .ssd_color,
+#cpu .cpu_color,
+#memory .mem_color,
+#mobo .mobo_color,
+#graph-card .gcard_color,
+#etc .etc_color, 
+#candy .candy_color{
+    display: none;
+    
+}
+
+#mon:hover .mon_blk,
+#key:hover .key_blk,
+#psu:hover .psu_blk,
+#ssd:hover .ssd_blk,
+#cpu:hover .cpu_blk,
+#memory:hover .mem_blk,
+#mobo:hover .mobo_blk,
+#graph-card:hover .gcard_blk,
+#etc:hover .etc_blk,
+#candy:hover .candy_blk{
+    display: none;
+    
+}
+
+#mon:hover .mon_color,
+#key:hover .key_color,
+#psu:hover .psu_color,
+#ssd:hover .ssd_color,
+#cpu:hover .cpu_color,
+#memory:hover .mem_color,
+#mobo:hover .mobo_color,
+#graph-card:hover .gcard_color,
+#etc:hover .etc_color,
+#candy:hover .candy_color{
+    display: inline;
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+#mon:hover #mon-hover, 
+#key:hover #key-hover,
+#graph-card:hover #graph-card-hover,
+#ssd:hover #ssd-hover,
+#mobo:hover #mobo-hover,
+#mice:hover #mice-hover,
+#psu:hover #psu-hover,
+#etc:hover #etc-hover,
+#memory:hover #memory-hover,
+#cpu:hover #cpu-hover,
+#candy:hover #candy-hover{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+#mon:hover,
+#key:hover,
+#graph-card:hover,
+#ssd:hover,
+#mice:hover,
+#mobo:hover,
+#psu:hover,
+#etc:hover,
+#memory:hover,
+#cpu:hover,
+#candy:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    -webkit-animation: boxShadow .5s;
+    animation:  boxShadow .51s;
+} 
+
+/*ANIMATION KEYFRAMES*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes boxShadow {    
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  
+@keyframes boxShadow {
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  

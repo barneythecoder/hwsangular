@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    min-width: 1366px;
+    }
+body>nav{
+    position: fixed;
+    z-index:1000;
+}
+
+.blktext{
+    color:#000;
+}
+.whttext{
+    color: #fff;
+}
