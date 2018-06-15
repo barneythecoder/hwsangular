@@ -1,8 +1,8 @@
 body{
     min-width: 1366px;
     }
-body>nav{
-    position: fixed;
+nav{
+    position: fixed!important;
     z-index:1;
 }
 

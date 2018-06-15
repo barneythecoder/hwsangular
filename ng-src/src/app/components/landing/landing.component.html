@@ -1,4 +1,4 @@
-<div mnFullpage [mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','why','candy']">
+<div mnFullpage [mnFullpageOnLeave]="onLeave"[mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies']">
 
     <nav class="nav-center white index_nav" id="unscrolled-header" >
         <div class="row blktext center" >
@@ -15,8 +15,8 @@
                     <div class="line"></div>
                 </div>
                 <div class="row">
-                    <div class="col s4 nav-list"><a ng-href="prods">Products</a></div>
-                    <div class="col s4 nav-list"><a href="#">Candy</a></div>
+                    <div class="col s4 nav-list"><a href="#prods">Products</a></div>
+                    <div class="col s4 nav-list"><a href="#candies">Candy</a></div>
                     <div class="col s4 nav-list"><a href="#">HWS Treats</a></div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
       </div>
   </div>
 
-  <div class="section welcome-section fp-section fp-table candy-sec">
+  <div class="section welcome-section fp-section fp-table candy-sec" data-anchor="candies">
       <div class = "fp-tableCell">
           <div class="row">
               <div class="valign-wrapper">

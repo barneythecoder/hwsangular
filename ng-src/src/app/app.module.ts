@@ -9,6 +9,7 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { LandingComponent } from './components/landing/landing.component';
 import { KeyboardsComponent } from './components/keyboards/keyboards.component';
 
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     MnFullpageModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
