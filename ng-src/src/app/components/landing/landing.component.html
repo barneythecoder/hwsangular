@@ -1,6 +1,6 @@
 <div mnFullpage [mnFullpageOnLeave]="onLeave"[mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies']">
 
-    <nav class="nav-center white index_nav" id="unscrolled-header" >
+    <nav [ngClass]="{'hide': scrolled}" class="nav-center white index_nav" id="unscrolled-header" >
         <div class="row blktext center" >
             <div class="col s1 ">
                     <div class="col s2 offset-s1">
@@ -204,3 +204,4 @@
 
 
 </div>
+

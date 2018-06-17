@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
 
   constructor() { }
-
+  public scrolled: boolean;
   ngOnInit() {
   }
   public onLeave(index: number, nextIndex: number, direction: string): void {
-    
+     
+    this.scrolled = true;
   }
 
 }
