@@ -1,18 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, enableProdMode, HostListener,  OnDestroy } from '@angular/core';
+import { MnFullpageService } from 'ngx-fullpage';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-
-  constructor() { }
-  public scrolled: boolean;
+  public isScrolled: boolean;
+  constructor(private fp: MnFullpageService) { }
+  
   ngOnInit() {
   }
-  public onLeave(index: number, nextIndex: number, direction: string): void {
-     
-    this.scrolled = true;
+  ngOnDestroy(){
+    this.fp.destroy('all');
+    
   }
+
+
+  public onLeave(index: number, nextIndex: number, direction: string): void {
+    this.isScrolled = true;
+  }
+
+
 
 }

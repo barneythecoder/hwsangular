@@ -1,6 +1,6 @@
-<div mnFullpage [mnFullpageOnLeave]="onLeave"[mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies']">
+<div mnFullpage [mnFullpageOnLeave]="onLeave" [mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies']">
 
-    <nav [ngClass]="{'hide': scrolled}" class="nav-center white index_nav" id="unscrolled-header" >
+    <nav [class.hide]="isScrolled" class="nav-center white index_nav" id="unscrolled-header" >
         <div class="row blktext center" >
             <div class="col s1 ">
                     <div class="col s2 offset-s1">
@@ -61,7 +61,7 @@
                   <div class="col s1 center-align"></div>
 
                   <div class="col s2 center-align" id="mon">
-                      <a href="#">
+                      <a [routerLink]="['/monitors']">
 
                           <img class="responsive-img mon_color"  src="../assets/img/icon_monitor.png">
                           <img class="responsive-img mon_blk" src="../assets/img/icon_monitor_blk.png">

@@ -8,12 +8,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MnFullpageModule } from 'ngx-fullpage';
 import { LandingComponent } from './components/landing/landing.component';
 import { KeyboardsComponent } from './components/keyboards/keyboards.component';
-
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { MonitorsComponent } from './components/monitors/monitors.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
-  {path: 'keyboards', component: KeyboardsComponent}
+  {path: 'keyboards', component: KeyboardsComponent},
+  {path: 'monitors',component: MonitorsComponent}
 ];
 
 @NgModule({
@@ -21,13 +21,13 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     LandingComponent,
-    KeyboardsComponent
+    KeyboardsComponent,
+    MonitorsComponent
   ],
   imports: [
     BrowserModule,
     MnFullpageModule.forRoot(),
-    RouterModule.forRoot(appRoutes),
-    ScrollToModule.forRoot()
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
