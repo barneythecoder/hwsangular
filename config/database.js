@@ -1,4 +1,4 @@
 module.exports = {
-    database:'mongodb://localhost:27017/hws',
+    database:'mongodb://hwsadmin:Lotr_0219@ds263660.mlab.com:63660/hwsdb',
     secret: 'rockyren'
 }
