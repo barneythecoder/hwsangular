@@ -11,7 +11,6 @@ export class MonitorsComponent implements OnInit {
   orderFormDialogRef: MatDialogRef<OrderFormComponent>;
   constructor(private dialog: MatDialog) { }
   openOrderFormDialog(){
-    console.log("Form");
     this.orderFormDialogRef = this.dialog.open(OrderFormComponent);
   }
 

@@ -1,5 +1,6 @@
 body{
     min-width: 1366px;
+    background-color: #fafafa!important;
     }
 nav{
     position: fixed!important;
@@ -82,7 +83,7 @@ margin-top:0!important;
 }
 
 .index{
-    background-color: #ECECEC;  
+    background-color: #fafafa;  
 }
 .product{
     background-color: #fff;

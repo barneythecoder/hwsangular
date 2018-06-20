@@ -2,6 +2,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 body{
     min-width: 1366px;
+    background-color: #fafafa!important;
     }
 body>nav{
     position: fixed;

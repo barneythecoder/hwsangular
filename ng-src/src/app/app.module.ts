@@ -13,6 +13,7 @@ import { OrderFormComponent } from './components/order-form/order-form.component
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -36,7 +37,10 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   entryComponents:[OrderFormComponent],
   providers: [],
