@@ -12,14 +12,16 @@ import { MonitorsComponent } from './components/monitors/monitors.component';
 import { SsdComponent } from './components/ssd/ssd.component';
 import { EtcComponent } from './components/etc/etc.component';
 import { TreatsComponent } from './components/treats/treats.component';
+import { ProductpageComponent } from './components/productpage/productpage.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
-  {path: 'keyboards', component: KeyboardsComponent},
-  {path: 'monitors',component: MonitorsComponent},
-  {path: 'ssd', component: SsdComponent},
-  {path: 'etc', component: EtcComponent},
-  {path: 'treats', component: TreatsComponent}
+  {path: 'products/keyboards', component: KeyboardsComponent},
+  {path: 'products/monitors',component: MonitorsComponent},
+  {path: 'products/ssd', component: SsdComponent},
+  {path: 'products/etc', component: EtcComponent},
+  {path: 'products/treats', component: TreatsComponent},
+  {path: 'productpage', component: ProductpageComponent}
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     MonitorsComponent,
     SsdComponent,
     EtcComponent,
-    TreatsComponent
+    TreatsComponent,
+    ProductpageComponent
   ],
   imports: [ 
     BrowserModule,
