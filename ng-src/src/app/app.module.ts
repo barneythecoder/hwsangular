@@ -9,6 +9,7 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { LandingComponent } from './components/landing/landing.component';
 import { KeyboardsComponent } from './components/keyboards/keyboards.component';
 import { MonitorsComponent } from './components/monitors/monitors.component';
+import { OrderFormComponent } from './components/order-form/order-form.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     LandingComponent,
     KeyboardsComponent,
-    MonitorsComponent
+    MonitorsComponent,
+    OrderFormComponent
   ],
   imports: [
     BrowserModule,
