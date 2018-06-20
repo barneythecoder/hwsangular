@@ -75,7 +75,7 @@
                   <div class="upper-cont">
                       <div>
                           <div class="right-align">
-                              <p class="recent-price" id="recent-price"> <span class= "crossed-out-price" id="crossed-out-price"> </span>P15,200</p>
+                              <p class="recent-price" id="recent-price" #prodPrice> <span class= "crossed-out-price" id="crossed-out-price"> </span>P15,200</p>
                               <div class="valign-wrapper right received-candies">
                                   <p class="total-candies-rec">You get <span id="num-of-candies"> 60 </span> </p>
                                   <img class="responsive-img candy-img" src="../assets/img/product-candies.png">
@@ -95,7 +95,7 @@
                           <p class="product-brand" id="product-brand">LG</p>
                           <div class="monitors-list">
                               <ul>
-                                  <li>32MA70HY-P </li>
+                                  <li #prodName>32MA70HY-P </li>
                                   <li>1080P</li>
                                   <li>32''</li>
                                   <li>Full HD IPS</li>
@@ -103,7 +103,7 @@
                           </div>
                       </div>
                       <div class="col s3 center-align no-pad">
-                          <button (click)="openOrderFormDialog()" class="btn waves-effect waves-light">
+                          <button (click)="openOrderFormDialog({itemName:prodName.innerText, itemPrice:prodPrice.innerText})" class="btn waves-effect waves-light">
                               Buy Now
                           </button>
                           <p class="prod-available">Available: <span>YES</span></p>
