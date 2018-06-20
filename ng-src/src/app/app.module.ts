@@ -11,13 +11,15 @@ import { KeyboardsComponent } from './components/keyboards/keyboards.component';
 import { MonitorsComponent } from './components/monitors/monitors.component';
 import { SsdComponent } from './components/ssd/ssd.component';
 import { EtcComponent } from './components/etc/etc.component';
+import { TreatsComponent } from './components/treats/treats.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'keyboards', component: KeyboardsComponent},
   {path: 'monitors',component: MonitorsComponent},
   {path: 'ssd', component: SsdComponent},
-  {path: 'etc', component: EtcComponent}
+  {path: 'etc', component: EtcComponent},
+  {path: 'treats', component: TreatsComponent}
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     KeyboardsComponent,
     MonitorsComponent,
     SsdComponent,
-    EtcComponent
+    EtcComponent,
+    TreatsComponent
   ],
   imports: [ 
     BrowserModule,

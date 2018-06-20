@@ -1,8 +1,28 @@
-body{
-    background-color: #fafafa ;
+.treats{
+    background-color: #fafafa;
 }
+
+.treats-item-title{
+    font-family: loveloblack;
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    margin: 10px auto!important;
+}
+
+.monitors{
+    background-color: #1582D0!important;
+}
+
 .keyboards{
     background-color: #94a7f4!important;
+}
+
+.ssd{
+    background-color: #19cc74!important;
+}
+
+.etc{
+    background-color: #4532dc!important;
 }
 
 nav{
@@ -14,6 +34,7 @@ nav a{
     font-weight: bold;
     font-family: loveloblack;
     margin-left:20px;  
+    color: #000;
 }
 
 /**** UPPER CONTENT****/
@@ -57,10 +78,9 @@ nav a{
     font-family: loveloblack;
     font-size: 16px;
 }
-/************************/
-/**** MIDDLE CONTENT****/
 
-/************************/
+/************************************/
+
 /**** BOTTOM CONTENT ****/
 
 .btn{
@@ -82,62 +102,16 @@ button a{
     padding:15px!important;
 }
 
-.keyboards-list ul{
+.treats-list ul{
     margin-top: 0!important;
 }
-.keyboards-list li{
+.treats-list li{
     display:inline-block;
     font-family: loveloblack;
     padding-right:12px;
     font-size: 13px;
 }
 /************************/
-/******* ON HOVER *******/
-
-.products-item{
-    box-shadow: none;
-}
-.products-item:hover{
-    -webkit-animation: boxShadow .5s;
-    animation:  boxShadow .51s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15); 
-}
-
-.products-item:hover .upper-cont{
-    opacity: 1;
-    -webkit-animation: fadeIn .5s;
-    animation: fadeIn .5s;
-}
-.products-item:hover .bottom-cont{
-    opacity: 1;
-    -webkit-animation: fadeIn .5s;
-    animation: fadeIn .5s;
-}
-
-.upper-cont, .bottom-cont{
-    opacity:0;
-}
-
-/*ANIMATION KEYFRAMES*/
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}  
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@-webkit-keyframes boxShadow {    
-    0% { box-shadow: none }
-    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
-}  
-@keyframes boxShadow {
-    0% { box-shadow: none }
-    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
-}  
-/**************************************/
-
 
 @font-face {
     font-family: 'Material Icons';
@@ -160,4 +134,15 @@ button a{
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+}
+
+/*****On Hover*******/
+
+.received-candies, ul, .prod-available{
+    opacity:0;
+}
+.received-candies:hover, 
+ul:hover, 
+.prod-available:hover{
+    opacity:1;
 }
