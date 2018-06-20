@@ -9,11 +9,15 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { LandingComponent } from './components/landing/landing.component';
 import { KeyboardsComponent } from './components/keyboards/keyboards.component';
 import { MonitorsComponent } from './components/monitors/monitors.component';
+import { SsdComponent } from './components/ssd/ssd.component';
+import { EtcComponent } from './components/etc/etc.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'keyboards', component: KeyboardsComponent},
-  {path: 'monitors',component: MonitorsComponent}
+  {path: 'monitors',component: MonitorsComponent},
+  {path: 'ssd', component: SsdComponent},
+  {path: 'etc', component: EtcComponent}
 ];
 
 @NgModule({
@@ -22,9 +26,11 @@ const appRoutes: Routes = [
     NavbarComponent,
     LandingComponent,
     KeyboardsComponent,
-    MonitorsComponent
+    MonitorsComponent,
+    SsdComponent,
+    EtcComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     MnFullpageModule.forRoot(),
     RouterModule.forRoot(appRoutes)
