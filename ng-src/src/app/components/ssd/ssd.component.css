@@ -1,8 +1,8 @@
 body{
     background-color: #fafafa ;
 }
-.keyboards{
-    background-color: #94a7f4!important;
+.ssd{
+    background-color: #14e99b!important;
 }
 
 nav{
@@ -50,6 +50,12 @@ nav a{
     margin-left: 5px;
     margin-right: 5px;
 }
+.crossed-out-price{
+    text-decoration: line-through;
+    color: #ca2f2f;
+    font-family: loveloblack;
+    font-size: 16px;
+}
 /************************/
 /**** MIDDLE CONTENT****/
 
@@ -85,6 +91,55 @@ button a{
     font-size: 13px;
 }
 /************************/
+
+/******* ON HOVER *******/
+
+.products-item{
+    box-shadow: none;
+}
+.products-item:hover{
+    -webkit-animation: boxShadow .5s;
+    animation:  boxShadow .51s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); 
+}
+
+.products-item:hover .upper-cont{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+.products-item:hover .bottom-cont{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+.upper-cont, .bottom-cont{
+    opacity:0;
+}
+
+/*ANIMATION KEYFRAMES*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes boxShadow {    
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  
+@keyframes boxShadow {
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  
+
+/******************************************/
+
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
