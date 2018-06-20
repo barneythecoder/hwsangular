@@ -11,6 +11,9 @@ import { KeyboardsComponent } from './components/keyboards/keyboards.component';
 import { MonitorsComponent } from './components/monitors/monitors.component';
 import { OrderFormComponent } from './components/order-form/order-form.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'keyboards', component: KeyboardsComponent},
@@ -29,8 +32,13 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     MnFullpageModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
+  entryComponents:[OrderFormComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
