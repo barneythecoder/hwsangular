@@ -1,5 +1,6 @@
 body{
     min-width: 1366px;
+    background-color: #fafafa;
     }
 nav{
     position: fixed!important;
