@@ -208,8 +208,7 @@ margin-top:0!important;
 #memory .mem_color,
 #mobo .mobo_color,
 #graph-card .gcard_color,
-#etc .etc_color, 
-#candy .candy_color{
+#etc .etc_color{
     display: none;
     
 }
