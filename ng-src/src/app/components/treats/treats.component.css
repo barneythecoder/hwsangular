@@ -171,6 +171,9 @@ ul:hover,
     -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
 }
+.testClass{
+    color:#fff;
+}
 
  .treats-list{
     opacity:0;
