@@ -14,11 +14,19 @@ import { OrderFormComponent } from './components/order-form/order-form.component
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { SsdComponent } from './components/ssd/ssd.component';
+import { EtcComponent } from './components/etc/etc.component';
+import { TreatsComponent } from './components/treats/treats.component';
+import { ProductpageComponent } from './components/productpage/productpage.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
-  {path: 'keyboards', component: KeyboardsComponent},
-  {path: 'monitors',component: MonitorsComponent}
+  {path: 'products/keyboards', component: KeyboardsComponent},
+  {path: 'products/monitors',component: MonitorsComponent},
+  {path: 'products/ssd', component: SsdComponent},
+  {path: 'products/etc', component: EtcComponent},
+  {path: 'products/treats', component: TreatsComponent},
+  {path: 'productpage', component: ProductpageComponent}
 ];
 
 @NgModule({
@@ -28,9 +36,13 @@ const appRoutes: Routes = [
     LandingComponent,
     KeyboardsComponent,
     MonitorsComponent,
-    OrderFormComponent
+    OrderFormComponent,
+    SsdComponent,
+    EtcComponent,
+    TreatsComponent,
+    ProductpageComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     MnFullpageModule.forRoot(),
     RouterModule.forRoot(appRoutes),

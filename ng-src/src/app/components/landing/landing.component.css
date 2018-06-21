@@ -208,8 +208,7 @@ margin-top:0!important;
 #memory .mem_color,
 #mobo .mobo_color,
 #graph-card .gcard_color,
-#etc .etc_color, 
-#candy .candy_color{
+#etc .etc_color{
     display: none;
     
 }
@@ -294,3 +293,78 @@ margin-top:0!important;
     0% { box-shadow: none }
     100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 }  
+
+
+/******************************************
+    WHY SHOP WITH US PANEL
+*******************************************/
+.why-shop{
+    background: #663AF5;
+    height: 100vh;
+    background:linear-gradient(to right, #fff 0%, #fff 42%, #fff 42%, #663AF5 42%, #663AF5 100%);
+}
+
+.BG{
+    background-size: cover;
+}
+.ws-height{
+    height: 100vh;
+}
+
+.ws-text{
+    font-family: loveloline;
+    font-size: 10vmin;
+    color: #663AF5;
+    line-height: normal; 
+}
+
+.ws-item-text{
+    font-family: loveloline;
+    font-size: 5vmin;
+    color: #663AF5;
+    line-height: normal; 
+}
+
+.ws-title{
+    position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+    width: 80%;
+    margin: 0 20px 0 auto;
+}
+
+.ws-container{
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+    width: 80%;
+    height:300px;
+    margin: 0 35px;
+}
+.ws-content{
+    font-family: Robotoregular;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 2.333vmin;
+    color: #FFFFFF;
+}
+
+.btn-container{
+    margin-top: 50px;
+}
+.btn-container a{
+    margin: 5px 5px;
+}
+.btn-container p{
+    width:90%;
+    font-family: loveloblack;
+    margin:0 auto;
+}
+#ws-shop-btn{
+    background: #fff;  
+}
+#ws-shop-btn p{
+    color: #663AF5;
+}

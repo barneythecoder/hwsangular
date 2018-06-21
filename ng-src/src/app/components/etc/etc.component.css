@@ -1,8 +1,8 @@
 body{
     background-color: #fafafa ;
 }
-.keyboards{
-    background-color: #94a7f4!important;
+.etc{
+    background-color: #4532dc!important;
 }
 
 nav{
@@ -82,10 +82,10 @@ button a{
     padding:15px!important;
 }
 
-.keyboards-list ul{
+.etc-list ul{
     margin-top: 0!important;
 }
-.keyboards-list li{
+.etc-list li{
     display:inline-block;
     font-family: loveloblack;
     padding-right:12px;
@@ -137,8 +137,6 @@ button a{
     100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 }  
 /**************************************/
-
-
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -160,4 +158,4 @@ button a{
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-}
+} 

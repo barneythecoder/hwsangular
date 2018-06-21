@@ -1,8 +1,8 @@
 body{
     background-color: #fafafa ;
 }
-.keyboards{
-    background-color: #94a7f4!important;
+.ssd{
+    background-color: #19cc74!important;
 }
 
 nav{
@@ -50,7 +50,6 @@ nav a{
     margin-left: 5px;
     margin-right: 5px;
 }
-
 .crossed-out-price{
     text-decoration: line-through;
     color: #ca2f2f;
@@ -82,16 +81,17 @@ button a{
     padding:15px!important;
 }
 
-.keyboards-list ul{
+.ssd-list ul{
     margin-top: 0!important;
 }
-.keyboards-list li{
+.ssd-list li{
     display:inline-block;
     font-family: loveloblack;
     padding-right:12px;
     font-size: 13px;
 }
 /************************/
+
 /******* ON HOVER *******/
 
 .products-item{
@@ -136,7 +136,8 @@ button a{
     0% { box-shadow: none }
     100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 }  
-/**************************************/
+
+/******************************************/
 
 
 @font-face {
