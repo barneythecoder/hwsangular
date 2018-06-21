@@ -4,7 +4,7 @@
 
 .treats-item-title{
     font-family: loveloblack;
-    color:rgb(0, 0, 0);
+    color:#fff;
     font-size:30px;
     margin: 10px auto!important;
 }
@@ -138,6 +138,10 @@ button a{
 
 /*****On Hover*******/
 
+/* .products-item:hover{
+
+}
+
 .received-candies, ul, .prod-available{
     opacity:0;
 }
@@ -145,4 +149,48 @@ button a{
 ul:hover, 
 .prod-available:hover{
     opacity:1;
+} */
+
+
+.products-item{
+    box-shadow: none;
 }
+.products-item:hover{
+    -webkit-animation: boxShadow .5s;
+    animation:  boxShadow .51s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); 
+}
+
+.products-item:hover .upper-cont{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+.products-item:hover .treats-list{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+ .treats-list{
+    opacity:0;
+}
+
+/*ANIMATION KEYFRAMES*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes boxShadow {    
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  
+@keyframes boxShadow {
+    0% { box-shadow: none }
+    100% { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+}  

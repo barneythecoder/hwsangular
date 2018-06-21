@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogConfig } from '@angular/material';
 import { OrderFormComponent } from '../order-form/order-form.component';
+
 @Component({
   selector: 'app-monitors',
   templateUrl: './monitors.component.html',
@@ -33,7 +34,9 @@ export class MonitorsComponent implements OnInit {
     .afterClosed()
     .pipe(order => order)
     .subscribe(order => {      
-      console.log(order);
+      
+     
+
     });
 
     

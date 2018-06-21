@@ -1,4 +1,4 @@
-<div mnFullpage [mnFullpageOnLeave]="onLeave" [mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies']">
+<div mnFullpage [mnFullpageOnLeave]="onLeave" [mnFullpageNavigation]="true" [mnFullpageAnchors]="['landing','prods','candies','whyus']">
 
     <nav [class.hide]="isScrolled" class="nav-center white index_nav" id="unscrolled-header" >
         <div class="row blktext center" >
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col s4 nav-list"><a href="#prods">Products</a></div>
                     <div class="col s4 nav-list"><a href="#candies">Candy</a></div>
-                    <div class="col s4 nav-list"><a href="#">HWS Treats</a></div>
+                    <div class="col s4 nav-list"><a [routerLink]="['/products/treats']">HWS Treats</a></div>
                 </div>
             </div>
             <div class="col s2 center">
@@ -29,7 +29,7 @@
                 </div>                
                 <div class="row">
                     <div class="col s4 nav-list"><a href="https://docs.google.com/spreadsheets/d/1ewWrIVHcWtQ9PxkM5UHblbWmgT8fn6p7_B-L9hndq7I/edit#gid=0">All</a></div>
-                    <div class="col s4 nav-list"><a href="#">Why Us?</a></div>
+                    <div class="col s4 nav-list"><a href="#whyus">Why Us?</a></div>
                     <div class="col s4 nav-list"><a href="#">Hit us Up</a></div>
                 </div>
             </div>
@@ -81,8 +81,8 @@
                     <a [routerLink]="['/products/treats']">
                         <img class="responsive-img candy_color" src="../assets/img/icon_logo.png">
                     </a>
-                    <div id ="candy-hover">
-                        <p class="product-title">Treats</p>
+                    <div id ="candy-hover-disabled-for-now">
+                        <p class="product-title">Steam Sale!</p>
                     </div>
                 </div>
                 <div class="col s2 center-align" id="psu">
@@ -204,15 +204,17 @@
                         <p class="ws-content">
                             Go to any PC store near you, and what do you see? First, the store is guaranteed to be cramped. Stacks of printer boxes in the middle, typical glass displays featuring laptops from 3 years ago and a buch of sealed, untestable other stuff. It's like going through a government office. 
                             <br/>NOT. FUN. AT. ALL
-                            <br> <br><br>
-                            Hardware Sugar was founded by 2 gamers who were tired of the lousy customer service of most local pc shops. Our aim is to make buying hardware FUN.
+                            <br/> <br/>
+                            Hardware Sugar was founded by 2 gamers who were tired of the lousy customer service of most local pc shops. Our aim is to make buying hardware FUN. 
+                            <br/><br/>
+                            Scroll down below and we'll let you know how!
                         </p>
                     </div>
                 </div>
             </div>     
         </div>
     </div>
-    <div class="section welcome-section fp-section fp-table why-shop" data-anchor="whyus">
+    <div class="section welcome-section fp-section fp-table why-shop">
         <div class = "fp-tableCell">
             <div class="row ws-two">
                 <div class="col s5 ws-height BG valign-wrapper">
@@ -234,7 +236,7 @@
             </div>
         </div>
     </div> 
-    <div class="section welcome-section fp-section fp-table why-shop" data-anchor="whyus">
+    <div class="section welcome-section fp-section fp-table why-shop">
         <div class = "fp-tableCell">
             <div class="row ws-three">
                 <div class="col s5 ws-height BG valign-wrapper">
@@ -253,7 +255,7 @@
             </div>    
         </div>
     </div>  
-    <div class="section welcome-section fp-section fp-table why-shop" data-anchor="whyus">
+    <div class="section welcome-section fp-section fp-table why-shop">
         <div class="fp-tableCell">
             <div class="row ws-four">
                 <div class="col s5 ws-height BG valign-wrapper">
@@ -276,7 +278,7 @@
             </div>           
         </div>
     </div>  
-    <div class="section welcome-section fp-section fp-table why-shop" data-anchor="whyus">
+    <div class="section welcome-section fp-section fp-table why-shop">
         <div class = "fp-tableCell">
             <div class="row ws-five">
                 <div class="col s5 ws-height BG valign-wrapper">
@@ -290,6 +292,7 @@
                         <p class="ws-content">
                             Yes our delivery is free. But if you come into the store to pick up your purchase you get 100 pesos rebate! We’d like a chance to say hello to all of our customers.
                         </p>
+                        <a href="#landing"class="waves-effect waves-teal btn-flat center">Back to top</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit, inject, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-order-form',
@@ -10,18 +10,45 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class OrderFormComponent implements OnInit {
 
   form: FormGroup;
-  items: {};
+ 
+  items: {
+    itemName:'',
+    itemPrice:'',
+    customerName:'',
+    customerAddress:'',
+    customerNumber:''
+  };
   constructor(private formBuilder: FormBuilder,
     private dialogRef: MatDialogRef<OrderFormComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {
-      this.items = this.data;
+  /*     this.form = new FormGroup({
+        customerName: new FormControl(),
+        customerAddress: new FormControl(),
+        customerPhoneNumber: new FormControl(),
+      }); */
+
+      this.form = formBuilder.group({
+        customerName: '',
+        customerAddress: '',
+        customerPhoneNumber: '',
+      });
+      this.items = {
+        itemName: data.itemName,
+        itemPrice: data.itemPrice, 
+        customerName: '',
+        customerAddress: '',
+        customerNumber: ''};
      }
 
   ngOnInit() {
-    this.form = this.formBuilder.group({order:''});
+   
+    
     
   }
   submit(form) {
+    this.items.customerName = form.controls.customerName.value;
+    this.items.customerAddress = form.controls.customerAddress.value;
+    this.items.customerNumber = form.controls.customerPhoneNumber.value;
     this.dialogRef.close(this.items);
   }
 }
