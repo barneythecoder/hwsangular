@@ -12,7 +12,7 @@ export class MailorderService {
   mailReceivedOrder(order){
     let header = new Headers();
     header.append('Content-Type', 'application/json');
-    return this.http.post('http://hwsangular/mail/sendorder', order, {headers:header})
+    return this.http.post('http://hwsangular.com/mail/sendorder', order, {headers:header})
     .pipe(map(res => res.text));
   }
 }
