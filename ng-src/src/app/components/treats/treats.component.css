@@ -7,6 +7,12 @@
     color:#fff;
     font-size:30px;
     margin: 10px auto!important;
+    padding-left:40px;
+}
+
+
+.breadcrumb::before {
+    color: #000!important;
 }
 
 .monitors{
