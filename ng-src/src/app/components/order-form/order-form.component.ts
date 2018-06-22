@@ -1,6 +1,10 @@
 import { Component, OnInit, inject, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
+
+
+
+
 
 @Component({
   selector: 'app-order-form',
@@ -10,7 +14,6 @@ import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 export class OrderFormComponent implements OnInit {
 
   form: FormGroup;
- 
   items: {
     itemName:'',
     itemPrice:'',
@@ -46,9 +49,24 @@ export class OrderFormComponent implements OnInit {
     
   }
   submit(form) {
-    this.items.customerName = form.controls.customerName.value;
-    this.items.customerAddress = form.controls.customerAddress.value;
-    this.items.customerNumber = form.controls.customerPhoneNumber.value;
-    this.dialogRef.close(this.items);
+    const custName = form.controls.customerName.value;
+    const custAddress= form.controls.customerAddress.value;
+    const custPhone = form.controls.customerPhoneNumber.value;
+
+    if((!custName || custName.length === 0 || /^\s*$/.test(custName))){
+      console.log("Enter Name");
+    
+    }else if(!custAddress || custAddress.length === 0 || /^\s*$/.test(custAddress)){
+
+    }else if(!custPhone || custPhone.length === 0 || /^\s*$/.test(custPhone)){
+
+    }else{
+
+      this.items.customerName = form.controls.customerName.value;
+      this.items.customerAddress = form.controls.customerAddress.value;
+      this.items.customerNumber = form.controls.customerPhoneNumber.value;
+      console.log("Success");
+      this.dialogRef.close(this.items);
+    }
   }
 }

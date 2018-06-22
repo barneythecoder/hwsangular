@@ -1,31 +1,33 @@
 const express = require('express');
 const router = express.Router();
 router.post('/sendorder',(req, res, next)=>{
-    const sgMail = require('@sendgrid/mail');
-    console.log(req+" "+sgMail);
-    sgMail.setApiKey('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');
-    const msg = {
-      to: 'rclaudeismael@gmail.com',
-      from: 'orders@hwsugar.com',
-      subject: 'ORDER FROM: '+req.body.customerName,
-      text: 'Customer Name: '+req.body.customerName
-        +" Customer Address: "+req.body.customerAddress
-        +" Customer Number: "+req.body.customerNumber
-        +" Order Item: "+req.body.itemName,
-      html: 'Customer Name: '+req.body.customerName
-      +" <br/>Customer Address: "+req.body.customerAddress
-      +" <br/>Customer Number: "+req.body.customerNumber
-      +" <br/>Order Item: "+req.body.itemName,
-    };
-    sgMail.send(msg, (error, result)=>{
-      if (error) {
-        console.log(error);
-      }
-      else {
-        res.send(result);
-      }
-    });
-    console.log("res: "+res);
+  'use strict';
+
+var SparkPost = require('sparkpost');
+var sparky = new SparkPost(); // uses process.env.SPARKPOST_API_KEY
+
+sparky.transmissions.send({
+    options: {
+      sandbox: true
+    },
+    content: {
+      from: 'orders@hwsugar.ph', // 'testing@sparkpostbox.com'
+      subject: 'Oh hey!',
+      html:'<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>'
+    },
+    recipients: [
+      {address: 'rclaudeismael@gmail.com'}
+    ]
+  })
+  .then(data => {
+    console.log('Woohoo! You just sent your first mailing!');
+    console.log(data);
+  })
+  .catch(err => {
+    console.log('Whoops! Something went wrong');
+    console.log(err);
+  });
+
    
 });
 

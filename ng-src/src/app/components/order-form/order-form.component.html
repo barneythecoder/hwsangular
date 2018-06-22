@@ -1,9 +1,14 @@
 <form [formGroup]="form" (ngSubmit)="submit(form)" class="example-form">
 <h1 mat-dialog-title>You are ordering item: {{items.itemName}}</h1>
+<p>Our online store is going online soon! For now, please place your order by filling in the form below. We will get in touch with you immediately.</p>
+<p>Alternatively, you can reach us at 0917-140-33-44</p>
+<p>All fields are REQUIRED</p>
+
 <mat-dialog-content>
 
     <mat-form-field class="example-full-width" appearance="outline">
-      <input formControlName="customerName"  matInput placeholder="Full Name">
+      <input formControlName="customerName"  matInput placeholder="Name" required >
+
     </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="outline" >
@@ -11,13 +16,13 @@
     </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="outline">
-      <input formControlName="customerPhoneNumber"  matInput placeholder="Phone Number">
+      <input formControlName="customerPhoneNumber"  matInput placeholder="Mobile Number" required>
     </mat-form-field>  
   
   
 </mat-dialog-content>
 <mat-dialog-actions>
-  <button mat-button class="btn waves-effect waves-light" type="submit" >Add</button>
+  <button mat-button class="btn waves-effect waves-light" type="submit" >Order</button>
   <button class="btn waves-effect waves-light" mat-dialog-close>Cancel</button>
 </mat-dialog-actions>
 </form>

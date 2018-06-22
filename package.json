@@ -16,7 +16,9 @@
     "jsonwebtoken": "*",
     "mongoose": "*",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-jwt": "*",
+    "sib-api-v3-sdk": "^7.0.0",
+    "sparkpost": "^2.1.2"
   },
   "author": "Rocky Ismael, Ren Bernabe",
   "license": "ISC"
