@@ -36,10 +36,8 @@ export class MonitorsComponent implements OnInit {
     this.orderFormDialogRef
     .afterClosed()
     .pipe(order => order)
-    .subscribe(order => {      
-      
-     this.mailorderService.mailReceivedOrder(order).subscribe(data=>{});
-
+    .subscribe(order => {            
+     this.mailorderService.mailReceivedOrder(order);
     });
 
     

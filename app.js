@@ -20,6 +20,7 @@ mongoose.connection.on('error',(err)=>{
 const app = express();
 const users = require('./routes/users');
 const admin = require('./routes/admin');
+const mail = require('./routes/mail');
 
 // Port Number
 const port = process.env.PORT || 8080;
@@ -44,6 +45,9 @@ app.use('/users', users);
 
 // Admin Route
 app.use('/admin', admin);
+
+// Mail Route
+app.use('/mail', mail)
 
 app.use(function(req, res) {
     res.sendFile(path.join(__dirname, '/public', 'index.html'));
