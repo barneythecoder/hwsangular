@@ -893,7 +893,7 @@ var MailorderService = /** @class */ (function () {
     MailorderService.prototype.mailReceivedOrder = function (order) {
         var header = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         header.append('Content-Type', 'application/json');
-        return this.http.post('http://hwsangular.com/mail/sendorder', order, { headers: header })
+        return this.http.post('http://hwsugar.com/mail/sendorder', order, { headers: header })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.text; }));
     };
     MailorderService = __decorate([
