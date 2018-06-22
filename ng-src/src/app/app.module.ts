@@ -18,6 +18,10 @@ import { SsdComponent } from './components/ssd/ssd.component';
 import { EtcComponent } from './components/etc/etc.component';
 import { TreatsComponent } from './components/treats/treats.component';
 import { ProductpageComponent } from './components/productpage/productpage.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
+import {MailorderService} from './services/mailorder.service';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -51,11 +55,13 @@ const appRoutes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
+    HttpClientModule
     
   ],
   entryComponents:[OrderFormComponent],
-  providers: [],
+  providers: [MailorderService],
   bootstrap: [AppComponent]
 })
 
