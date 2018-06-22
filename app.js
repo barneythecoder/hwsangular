@@ -45,6 +45,10 @@ app.use('/users', users);
 // Admin Route
 app.use('/admin', admin);
 
+app.use(function(req, res) {
+    res.sendFile(path.join(__dirname, '/public', 'index.html'));
+});
+
 // Index Route
 app.get('/', (req, res)=>{
     res.send('Invalid enpoint');
