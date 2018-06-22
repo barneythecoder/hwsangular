@@ -12,8 +12,11 @@ sparky.transmissions.send({
     },
     content: {
       from: 'testing@' + process.env.SPARKPOST_SANDBOX_DOMAIN, // 'testing@sparkpostbox.com'
-      subject: 'Oh hey!',
-      html:'<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>'
+      subject: 'NEW Order FROM: '+req.body.customerName,
+      html:'<html><body><p>Item: '+req.body.itemName
+      +'<br/>Customer Name: '+req.body.customerName
+      +'<br/>Customer Address: '+req.body.customerAddress
+      +'Customer Phone Number: '+req.body.customerNumber+'</p></body></html>'
     },
     recipients: [
       {address: 'rclaudeismael@gmail.com'}
