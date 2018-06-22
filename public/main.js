@@ -469,9 +469,9 @@ var MonitorsComponent = /** @class */ (function () {
             .pipe(function (order) { return order; })
             .subscribe(function (order) {
             _this.mailorderService.mailReceivedOrder(order);
-            _this.snackBar.open("Order Received!", "DONE", {
-                duration: 10000,
-            });
+        });
+        this.snackBar.open("Order Received!", "DONE", {
+            duration: 10000,
         });
     };
     MonitorsComponent.prototype.ngOnInit = function () {

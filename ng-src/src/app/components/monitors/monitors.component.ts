@@ -41,11 +41,11 @@ export class MonitorsComponent implements OnInit {
     .subscribe(order => {            
      this.mailorderService.mailReceivedOrder(order);
 
-     this.snackBar.open("Order Received!", "DONE", {
+     
+    });
+    this.snackBar.open("Order Received!", "DONE", {
       duration: 10000,
     });
-    });
-
     
   }
 
