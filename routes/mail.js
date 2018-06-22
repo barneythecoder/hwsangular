@@ -22,10 +22,12 @@ sparky.transmissions.send({
   .then(data => {
     console.log('Woohoo! You just sent your first mailing!');
     console.log(data);
+    res.send(data);
   })
   .catch(err => {
     console.log('Whoops! Something went wrong');
     console.log(err);
+    res.send(err);
   });
 
    
