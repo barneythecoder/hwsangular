@@ -8,7 +8,7 @@ var sparky = new SparkPost(); // uses process.env.SPARKPOST_API_KEY
 
 sparky.transmissions.send({
     options: {
-      sandbox: true
+      sandbox: false
     },
     content: {
       from: 'orders@' + "www.hwsugar.ph", // 'testing@sparkpostbox.com'
