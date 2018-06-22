@@ -16,7 +16,7 @@ sparky.transmissions.send({
       html:'<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>'
     },
     recipients: [
-      {address: 'rclaudeismael@gmail.com'}
+      {address: 'ren22430@gmail.com'}
     ]
   })
   .then(data => {
