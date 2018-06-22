@@ -463,7 +463,7 @@ var MonitorsComponent = /** @class */ (function () {
             .afterClosed()
             .pipe(function (order) { return order; })
             .subscribe(function (order) {
-            _this.mailorderService.mailReceivedOrder(order).subscribe(function (data) { });
+            _this.mailorderService.mailReceivedOrder(order);
         });
     };
     MonitorsComponent.prototype.ngOnInit = function () {
@@ -891,10 +891,13 @@ var MailorderService = /** @class */ (function () {
         this.http = http;
     }
     MailorderService.prototype.mailReceivedOrder = function (order) {
+        var body;
         var header = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
-        header.append('Content-Type', 'application/json');
-        return this.http.post('http://hwsugar.ph/mail/sendorder', order, { headers: header })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.text; }));
+        header.append('Content-Type', 'application/json'); /*
+        header.append('Authorization','Bearer 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'); */
+        return this.http.post('http://localhost:8080/mail/sendorder', order, { headers: header })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }))
+            .subscribe();
     };
     MailorderService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
