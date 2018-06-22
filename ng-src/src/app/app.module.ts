@@ -20,6 +20,7 @@ import { TreatsComponent } from './components/treats/treats.component';
 import { ProductpageComponent } from './components/productpage/productpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {MailorderService} from './services/mailorder.service';
 
@@ -57,7 +58,8 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
     
   ],
   entryComponents:[OrderFormComponent],

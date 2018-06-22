@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogConfig } from '@angular/material';
 import { OrderFormComponent } from '../order-form/order-form.component';
 import { MailorderService } from '../../services/mailorder.service';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-monitors',
@@ -14,7 +15,8 @@ export class MonitorsComponent implements OnInit {
   orderData: {}
   constructor(
     private dialog: MatDialog, 
-    private mailorderService: MailorderService) { }
+    private mailorderService: MailorderService,
+    public snackBar: MatSnackBar) { }
 
   openOrderFormDialog(items){
     let config: MatDialogConfig={
@@ -38,6 +40,10 @@ export class MonitorsComponent implements OnInit {
     .pipe(order => order)
     .subscribe(order => {            
      this.mailorderService.mailReceivedOrder(order);
+
+     this.snackBar.open("Order Received!", "DONE", {
+      duration: 10000,
+    });
     });
 
     

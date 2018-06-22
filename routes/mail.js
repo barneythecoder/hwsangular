@@ -16,7 +16,7 @@ sparky.transmissions.send({
       html:'<html><body><p>Item: '+req.body.itemName
       +'<br/>Customer Name: '+req.body.customerName
       +'<br/>Customer Address: '+req.body.customerAddress
-      +'Customer Phone Number: '+req.body.customerNumber+'</p></body></html>'
+      +'<br/>Customer Phone Number: '+req.body.customerNumber+'</p></body></html>'
     },
     recipients: [
       {address: 'rclaudeismael@gmail.com'}

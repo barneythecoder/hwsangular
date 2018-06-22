@@ -5,7 +5,6 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 
 
 
-
 @Component({
   selector: 'app-order-form',
   templateUrl: './order-form.component.html',
@@ -65,7 +64,7 @@ export class OrderFormComponent implements OnInit {
       this.items.customerName = form.controls.customerName.value;
       this.items.customerAddress = form.controls.customerAddress.value;
       this.items.customerNumber = form.controls.customerPhoneNumber.value;
-      console.log("Success");
+      
       this.dialogRef.close(this.items);
     }
   }

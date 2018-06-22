@@ -60,15 +60,16 @@
                         <p class="product-brand" id="product-brand">LG <span style="font-size: 25px; ">32 inches</span></p>
                         <div class="treats-list">
                             <ul>
-                                <li>32MP58HQ-P </li>
+                                <li #mon1>32MP58HQ-P </li>
                                 <li>1080P</li>
                                 <li>32''</li>
                                 <li>Full HD IPS</li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col s3 center-align no-pad">
-                        <button class="btn waves-effect waves-light">
+                        <button (click)="openOrderFormDialog({itemName:mon1.innerText})" class="btn waves-effect waves-light">
                             <a href="contact-us-page.html">Buy Now</a>
                         </button>
                         <p class="prod-available">Available: <span>YES</span></p>
@@ -120,7 +121,7 @@
                             <p class="product-brand" id="product-brand">LG <span style="font-size: 25px; ">32 inches</span></p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>32MA70HY-P </li>
+                                    <li #mon2>32MA70HY-P </li>
                                     <li>1080P</li>
                                     <li>32''</li>
                                     <li>Full HD IPS</li>
@@ -128,7 +129,7 @@
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:mon2.innerText})" class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -199,7 +200,7 @@
     <div class="row">
         <div class="bottom-cont">
             <div class="col s9 left-align no-pad">
-                <p class="product-brand" id="product-brand">KrBN </p>
+                <p #key1 class="product-brand" id="product-brand">KrBN </p>
                 <div class="treats-list">
                     <ul>
                         <li>Keyboard</li>
@@ -210,7 +211,7 @@
                 </div>
             </div>
             <div class="col s3 center-align no-pad">
-                <button class="btn waves-effect waves-light">
+                <button  (click)="openOrderFormDialog({itemName:key1.innerText})"class="btn waves-effect waves-light">
                     <a href="contact-us-page.html">Buy Now</a>
                 </button>
                 <p class="prod-available">Available: <span>YES</span></p>
@@ -283,8 +284,7 @@
                             <p class="product-brand" id="product-brand">Crucial 1TB SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>MX500</li>
-                                    <li>1TB</li>
+                                    <li #ssd1>MX500 1tb</li>
                                     <li>3D NAND SATA</li>
                                     <li>2.5-inch internal SSD</li>
                                     
@@ -292,7 +292,7 @@
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd1.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -354,8 +354,7 @@
                             <p class="product-brand" id="product-brand">Crucial 500GB SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>MX500</li>
-                                    <li>500GB</li>
+                                    <li #ssd2>MX500 500gb</li>
                                     <li>3D NAND Sata</li>
                                     <li>2.5-inch internal SSD</li>
                                     
@@ -363,7 +362,7 @@
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd2.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -427,15 +426,14 @@
                             <p class="product-brand" id="product-brand">Samsung 1TB SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>860 EVO</li>
-                                    <li>1tb</li>
+                                    <li #ssd3>860 EVO 1TB</li>
                                     <li>2.5 inch sata ssd</li>
                                     
                                 </ul>
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd3.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -497,15 +495,14 @@
                             <p class="product-brand" id="product-brand">Samsung 500GB SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>860 EVO</li>
-                                    <li>500gb</li>
+                                    <li #ssd4>860 EVO 500gb</li>
                                     <li>2.5 inch sata ssd</li>
                                     
                                 </ul>
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd4.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -561,15 +558,14 @@
                             <p class="product-brand" id="product-brand">Samsung 500GB SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>860 EVO</li>
-                                    <li>500gb</li>
+                                    <li #ssd5>860 EVO 500gb(t)</li>
                                     <li>2.5 inch sata ssd</li>
                                     
                                 </ul>
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd5.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -631,14 +627,13 @@
                             <p class="product-brand" id="product-brand">Sandisk 1tb SSD</p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>Ultra</li>
-                                    <li>1tb</li>                                    
+                                    <li #ssd6>Ultra 1tb</li>                   
                                     <li>3d nand sata iii ssd</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:ssd6.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
@@ -710,7 +705,7 @@
                             <p class="product-brand" id="product-brand">CryOrig </p>
                             <div class="treats-list">
                                 <ul>
-                                    <li>Cooler</li>
+                                    <li #coo1>Cooler</li>
                                     <li>m9i mini tower</li>
                                     <li></li>
                                     <li></li>
@@ -718,7 +713,7 @@
                             </div>
                         </div>
                         <div class="col s3 center-align no-pad">
-                            <button class="btn waves-effect waves-light">
+                            <button  (click)="openOrderFormDialog({itemName:coo1.innerText})"class="btn waves-effect waves-light">
                                 <a href="contact-us-page.html">Buy Now</a>
                             </button>
                             <p class="prod-available">Available: <span>YES</span></p>
