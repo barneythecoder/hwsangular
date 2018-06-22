@@ -11,7 +11,7 @@ sparky.transmissions.send({
       sandbox: true
     },
     content: {
-      from: 'orders@hwsugar.ph', // 'testing@sparkpostbox.com'
+      from: 'testing@' + process.env.SPARKPOST_SANDBOX_DOMAIN, // 'testing@sparkpostbox.com'
       subject: 'Oh hey!',
       html:'<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>'
     },
