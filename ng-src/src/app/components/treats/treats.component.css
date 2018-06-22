@@ -7,6 +7,12 @@
     color:#fff;
     font-size:30px;
     margin: 10px auto!important;
+    padding-left:40px;
+}
+
+
+.breadcrumb::before {
+    color: #000!important;
 }
 
 .monitors{
@@ -76,7 +82,21 @@ nav a{
     text-decoration: line-through;
     color: #ca2f2f;
     font-family: loveloblack;
-    font-size: 16px;
+    font-size: 15px;
+    margin-top: 37px;
+    margin-bottom: 11px;
+}
+
+.now{
+    font-family: robotomedium;
+    font-size: 10px;
+}
+.no-margin{
+    margin:0; 
+}
+
+.align-price{
+    line-height: 1px
 }
 
 /************************************/
