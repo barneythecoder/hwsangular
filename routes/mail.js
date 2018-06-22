@@ -19,7 +19,7 @@ sparky.transmissions.send({
       +'<br/>Customer Phone Number: '+req.body.customerNumber+'</p></body></html>'
     },
     recipients: [
-      {address: 'rclaudeismael@gmail.com'}
+      {address: 'hardwaresugar@gmail.com'}
     ]
   })
   .then(data => {
