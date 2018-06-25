@@ -150,7 +150,7 @@
 </div>
 
 <div class="row">
-    <div class="col s3"></div>
+    
     <div class="col s6 products">
         <div id="product-1" class="products-item">
         <div class="container center products-item-content" >
@@ -161,15 +161,6 @@
                 </div>
             </div>
             <div class="upper-cont">
-                <!-- <div>
-                    <div class="right-align">
-                        <p class="recent-price" id="recent-price"> <span class= "crossed-out-price" id="crossed-out-price"> Php 7000.00  </span>Php 5,950</p>
-                        <div class="valign-wrapper right received-candies">
-                            <p class="total-candies-rec">You get <span id="num-of-candies"> 28 </span> </p>
-                            <img class="responsive-img candy-img" src="../assets/img/product-candies.png">
-                        </div>
-                    </div>
-                </div> -->
 
                 <div>
                     <div class="right-align right">
@@ -221,7 +212,69 @@
         </div>
         </div>
     </div>
-    <div class="col s3"></div>
+
+    <div class="col s6 products">
+        <div id="product-1" class="products-item">
+        <div class="container center products-item-content" >
+            <div class="row no-btm">
+            <div class="treat-img">
+                <div class="left">
+                    <!-- <img src="../assets/img/product-treat-logo.png" class="responsive-img"> -->
+                </div>
+            </div>
+            <div class="upper-cont">
+
+                <div>
+                    <div class="right-align right">
+                        <div class="valign-wrapper right-align">
+                            <div class="align-price">
+                                <p class= "crossed-out-price" id="crossed-out-price">Php 4,300.00</p>
+                                <br/>
+                                <p class="no-margin now">Now only</p>
+                            </div>
+                            <div>
+                                <p class="recent-price" id="recent-price">Php 3,655.00</p>
+                            </div>
+                            
+                        </div>
+                        <div class="valign-wrapper right received-candies">
+                            <p class="total-candies-rec">You get <span id="num-of-candies"> 14 </span> </p>
+                            <a href="#candies"><img class="responsive-img candy-img" src="../assets/img/product-candies.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="middle-cont">
+            <img class="responsive-img" src="../assets/img/razer-ornata-keyboard.png" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="bottom-cont">
+            <div class="col s9 left-align no-pad">
+                <p class="product-brand" id="product-brand">Razer </p>
+                <div class="treats-list">
+                    <ul>
+                        <li #key2>Razer Ornata</li>
+                        <li>Membrane Keyboard</li>
+                        <li>Wrist Rest </li>
+                        <li>Ergonomic Design </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3 center-align no-pad">
+                <button  (click)="openOrderFormDialog({itemName:key3.innerText})"class="btn waves-effect waves-light">
+                    Buy Now
+                </button>
+                <p class="prod-available">Available: <span>YES</span></p>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
 </div>
 <!--Keyboards Ends-->
 
@@ -646,14 +699,91 @@
 </div>
 <!--SSD Ends-->
 
-<!--ETC-->
-<div class="row etc">
-  <div class="col s12">
-    <p class="treats-item-title">Coolers</p>
-  </div>
+<!--MOBO-->
+<div class="row mobo">
+    <div class="col s12">
+        <p class="treats-item-title">Mobo</p>
+    </div>
 </div>
 <div class="row">
-    <div class="col s3"></div>
+    <div class="row">
+        <div class="col s3 products"></div>
+
+        <div class="col s6 products">
+            <div id="product-1" class="products-item">
+                <div class="container center products-item-content" >
+                    <div class="row no-btm">
+                        <div class="treat-img">
+                            <div class="left">
+                                <!-- <img src="../assets/img/product-treat-logo.png" class="responsive-img"> -->
+                            </div>
+                        </div>
+                        <div class="upper-cont">
+                            
+                            <div>
+                                <div class="right-align right">
+                                    <div class="valign-wrapper right-align">
+                                        <div class="align-price">
+                                            <p class= "crossed-out-price" id="crossed-out-price">Php 8,840.00</p>
+                                            <br/>
+                                            <p class="no-margin now">Now only</p>
+                                        </div>
+                                        <div>
+                                            <p class="recent-price" id="recent-price">Php 7,520.00</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="valign-wrapper right received-candies">
+                                        <p class="total-candies-rec">You get <span id="num-of-candies"> 4 </span> </p>
+                                        <a href="#candies"><img class="responsive-img candy-img" src="../assets/img/product-candies.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="middle-cont">
+                            <img class="responsive-img" src="../assets/img/tomahawk.png" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bottom-cont">
+                            <div class="col s9 left-align no-pad">
+                                <p class="product-brand" id="product-brand"> MSI</p>
+                                <div class="treats-list">
+                                    <ul>
+                                        <li #hawk>TOMAHAWK LGA1151</li>
+                                        <li>DDR4</li>
+                                        <li>Intel Z370</li>
+                                        <li>ATX Motherboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col s3 center-align no-pad">
+                                <button  (click)="openOrderFormDialog({itemName:hawk.innerText})"class="btn waves-effect waves-light">
+                                    Buy Now
+                                </button>
+                                <p class="prod-available">Available: <span>YES</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col s3 products"></div>
+    </div>
+</div>
+
+<!--MOBO ends-->
+    
+<!--ETC-->
+<div class="row etc">
+    <div class="col s12">
+        <p class="treats-item-title">Etc</p>
+    </div>
+</div>
+<div class="row">
     <div class="col s6 products">
         <div id="product-1" class="products-item">
             <div class="container center products-item-content" >
@@ -723,6 +853,68 @@
             </div>
         </div>
     </div>
-    <div class="col s3"></div>
+    
+    <div class="col s6 products">
+        <div id="product-1" class="products-item">
+            <div class="container center products-item-content" >
+                <div class="row no-btm">
+                    <div class="treat-img">
+                        <div class="left">
+                            <!-- <img src="../assets/img/product-treat-logo.png" class="responsive-img"> -->
+                        </div>
+                    </div>
+                    <div class="upper-cont">
+                        
+                        <div>
+                            <div class="right-align right">
+                                <div class="valign-wrapper right-align">
+                                    <div class="align-price">
+                                        <p class= "crossed-out-price" id="crossed-out-price">Php 2,000.00</p>
+                                        <br/>
+                                        <p class="no-margin now">Now only</p>
+                                    </div>
+                                    <div>
+                                        <p class="recent-price" id="recent-price">Php 1,700.00</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="valign-wrapper right received-candies">
+                                    <p class="total-candies-rec">You get <span id="num-of-candies"> 6 </span> </p>
+                                    <a href="#candies"><img class="responsive-img candy-img" src="../assets/img/product-candies.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="middle-cont">
+                        <img class="responsive-img" src="../assets/img/google-chromecast.png" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bottom-cont">
+                        <div class="col s9 left-align no-pad">
+                            <p class="product-brand" id="product-brand">Google</p>
+                            <div class="treats-list">
+                                <ul>
+                                    <li #chromecast>Google Chromecast 2</li>
+                                    <li>Streaming Media Player </li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s3 center-align no-pad">
+                            <button  (click)="openOrderFormDialog({itemName:coo1.innerText})"class="btn waves-effect waves-light">
+                                Buy Now
+                            </button>
+                            <p class="prod-available">Available: <span>YES</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--ETC ends-->
+
