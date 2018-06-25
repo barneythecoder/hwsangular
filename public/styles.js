@@ -662,10 +662,10 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/livingroom/Documents/projects/hwsangular/ng-src/src/styles.css */"./src/styles.css");
-__webpack_require__(/*! /home/livingroom/Documents/projects/hwsangular/ng-src/src/assets/styles/materialize.min.css */"./src/assets/styles/materialize.min.css");
-__webpack_require__(/*! /home/livingroom/Documents/projects/hwsangular/ng-src/src/assets/styles/fonts.css */"./src/assets/styles/fonts.css");
-module.exports = __webpack_require__(/*! /home/livingroom/Documents/projects/hwsangular/ng-src/node_modules/fullpage.js/dist/jquery.fullpage.css */"./node_modules/fullpage.js/dist/jquery.fullpage.css");
+__webpack_require__(/*! /home/rocky/Documents/hws/ng-src/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /home/rocky/Documents/hws/ng-src/src/assets/styles/materialize.min.css */"./src/assets/styles/materialize.min.css");
+__webpack_require__(/*! /home/rocky/Documents/hws/ng-src/src/assets/styles/fonts.css */"./src/assets/styles/fonts.css");
+module.exports = __webpack_require__(/*! /home/rocky/Documents/hws/ng-src/node_modules/fullpage.js/dist/jquery.fullpage.css */"./node_modules/fullpage.js/dist/jquery.fullpage.css");
 
 
 /***/ })
