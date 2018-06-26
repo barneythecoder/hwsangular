@@ -39,7 +39,7 @@ export class TreatsComponent implements OnInit {
     .afterClosed()
     .pipe(order => order)
     .subscribe(order => {
-      if(!(typeof order === "undefined")){
+      if(!(Object.keys(order).length === 0)){
         console.log("ORDER: "+order);
         this.mailorderService.mailReceivedOrder(order);
 
