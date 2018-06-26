@@ -23,6 +23,6 @@
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button class="btn waves-effect waves-light" type="submit" >Order</button>
-  <button class="btn waves-effect waves-light" mat-dialog-close>Cancel</button>
+  <button class="btn waves-effect waves-light" [mat-dialog-close]="cancelled">Cancel</button>
 </mat-dialog-actions>
 </form>
