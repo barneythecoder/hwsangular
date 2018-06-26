@@ -38,14 +38,15 @@ export class TreatsComponent implements OnInit {
     this.orderFormDialogRef
     .afterClosed()
     .pipe(order => order)
-    .subscribe(order => {      
+    .subscribe(order => {
       if(!(typeof order === "undefined")){
+        console.log("ORDER: "+order);
         this.mailorderService.mailReceivedOrder(order);
 
         this.snackBar.open("Order Received!", "DONE", {
          duration: 10000,
        });
-      }            
+      } 
     
     });
 
