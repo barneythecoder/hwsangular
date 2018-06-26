@@ -38,7 +38,14 @@ export class TreatsComponent implements OnInit {
     this.orderFormDialogRef
     .afterClosed()
     .pipe(order => order)
-    .subscribe(order => {            
+    .subscribe(order => {
+      console.log(order);
+      if(order == "cancelled"){
+        this.snackBar.open("Cancelled", "DONE", {
+          duration: 10000,
+        });
+        return;
+      }            
      this.mailorderService.mailReceivedOrder(order);
 
      this.snackBar.open("Order Received!", "DONE", {

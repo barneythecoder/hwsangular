@@ -58,8 +58,8 @@ nav a{
 .recent-price{
     color:#000;
     font-family: loveloblack;
-    font-size: 35px;
-    margin-bottom: 0!important;
+    font-size: 32px;
+    margin: 0;
 }
 
 .treat-img, .CS-img {
@@ -81,19 +81,25 @@ nav a{
     margin-right: 5px;
 }
 
+.valign-wrapper{
+    line-height: 32px!important;
+}
 .crossed-out-price{
     text-decoration: line-through;
     color: #ca2f2f;
     font-family: loveloblack;
-    font-size: 15px;
-    margin-top: 37px;
-    margin-bottom: 11px;
+    font-size: 25px;
+    margin: 0;
+    line-height: 24px;
+    padding-top: 37px;
+    /*margin-bottom: 11px; */
 }
 
 .now{
     font-family: robotomedium;
-    font-size: 12px;
+    font-size: 13.5px;
     color: rgb(43, 43, 43);
+    padding: 0 5px
 }
 .no-margin{
     margin:0; 
