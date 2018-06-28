@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef, MatDialogConfig } from '@angular/material';
 import { OrderFormComponent } from '../order-form/order-form.component';
 import { MailorderService } from '../../services/mailorder.service';
 import {MatSnackBar} from '@angular/material';
+import { OrderReceivedDialogComponent } from '../order-received-dialog/order-received-dialog.component';
 
 @Component({
   selector: 'app-treats',
@@ -15,6 +16,7 @@ export class TreatsComponent implements OnInit {
   orderData: {}
   constructor(
     private dialog: MatDialog, 
+    private orderReceivedDialog: MatDialog,
     private mailorderService: MailorderService,
     public snackBar: MatSnackBar) { }
 
@@ -43,9 +45,13 @@ export class TreatsComponent implements OnInit {
         console.log("ORDER: "+order);
         this.mailorderService.mailReceivedOrder(order);
 
-        this.snackBar.open("Order Received!", "DONE", {
+
+        
+
+        this.orderReceivedDialog.open(OrderReceivedDialogComponent);
+        /* this.snackBar.open("Order Received!", "DONE", {
          duration: 10000,
-       });
+       }); */
       } 
     
     });

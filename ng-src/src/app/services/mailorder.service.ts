@@ -13,8 +13,7 @@ export class MailorderService {
    
     
     let header = new Headers();
-    header.append('Content-Type', 'application/json');/* 
-    header.append('Authorization','Bearer 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'); */
+    header.append('Content-Type', 'application/json');
     return this.http.post('http://www.hwsugar.ph/mail/sendorder', order, {headers:header})
     .pipe(map(res => res.json()))
     .subscribe();

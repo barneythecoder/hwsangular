@@ -1,5 +1,5 @@
 import { Component, OnInit, inject, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import {  MatDialog,MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
 
@@ -20,7 +20,9 @@ export class OrderFormComponent implements OnInit {
     customerAddress:'',
     customerNumber:''
   };
-  constructor(private formBuilder: FormBuilder,
+  constructor(
+    private orderReceivedDialog: MatDialog,
+    private formBuilder: FormBuilder,
     private dialogRef: MatDialogRef<OrderFormComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {
   /*     this.form = new FormGroup({

@@ -23,6 +23,7 @@ import { HttpModule } from '@angular/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {MailorderService} from './services/mailorder.service';
+import { OrderReceivedDialogComponent } from './components/order-received-dialog/order-received-dialog.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     SsdComponent,
     EtcComponent,
     TreatsComponent,
-    ProductpageComponent
+    ProductpageComponent,
+    OrderReceivedDialogComponent,
   ],
   imports: [ 
     BrowserModule,
@@ -62,7 +64,7 @@ const appRoutes: Routes = [
     MatSnackBarModule
     
   ],
-  entryComponents:[OrderFormComponent],
+  entryComponents:[OrderFormComponent, OrderReceivedDialogComponent],
   providers: [MailorderService],
   bootstrap: [AppComponent]
 })
