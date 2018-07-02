@@ -24,6 +24,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {MailorderService} from './services/mailorder.service';
 import { OrderReceivedDialogComponent } from './components/order-received-dialog/order-received-dialog.component';
+import { WhyusComponent } from './components/whyus/whyus.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
   {path: 'products/ssd', component: SsdComponent},
   {path: 'products/etc', component: EtcComponent},
   {path: 'products/treats', component: TreatsComponent},
-  {path: 'productpage', component: ProductpageComponent}
+  {path: 'productpage', component: ProductpageComponent},
+  {path: 'whyus', component: WhyusComponent}
 ];
 
 @NgModule({
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
     TreatsComponent,
     ProductpageComponent,
     OrderReceivedDialogComponent,
+    WhyusComponent,
   ],
   imports: [ 
     BrowserModule,
