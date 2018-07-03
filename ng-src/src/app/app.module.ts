@@ -1,3 +1,5 @@
+import { WindowModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
@@ -52,8 +54,11 @@ const appRoutes: Routes = [
     OrderReceivedDialogComponent,
     WhyusComponent,
   ],
-  imports: [ 
-    BrowserModule,
+  imports:[
+ CommonModule,
+WindowModule,
+  
+    
     MnFullpageModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
@@ -69,7 +74,6 @@ const appRoutes: Routes = [
   ],
   entryComponents:[OrderFormComponent, OrderReceivedDialogComponent],
   providers: [MailorderService],
-  bootstrap: [AppComponent]
 })
 
 export class AppModule { }
