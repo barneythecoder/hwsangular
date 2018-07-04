@@ -1,0 +1,135 @@
+<nav class="m-treats">
+    <div class="nav-wrapper treats">
+        <div class="col s12">
+            <a [routerLink]="['/']" class="breadcrumb">HWS</a>
+            <a href="#prods" class="breadcrumb">products</a>
+            <a href="" class="breadcrumb">treats</a>
+        </div>
+    </div>
+</nav>
+<!-- Monitors -->
+<div class="row monitors">
+    <div class="col s12">
+        <p class="treats-item-title">Monitors</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s6 products">
+        <div id="product-1" class="products-item">
+            <div class="container center products-item-content" >
+            <div class="row no-btm">
+                <div class="treat-img">
+                    <div class="left">
+                        <a href="#treatsEx"><img src="../assets/img/product-treat-logo.png" class="responsive-img"></a>
+                    </div>
+                </div>
+                <!-- <div class="upper-cont">
+                    <div>
+                        <div class="right-align right">
+                            <p class= "crossed-out-price" id="crossed-out-price">Php 15,160.00</p>
+                            <div class="valign-wrapper right-align">
+                                <div class="align-price">
+                                    <p class="no-margin now">Steam sale now only </p>
+                                </div>
+                                <p class="recent-price" id="recent-price">Php 12,800.00</p> 
+                            </div>
+                            <div class="valign-wrapper right received-candies">
+                                <p class="total-candies-rec">You get <span id="num-of-candies"> 60 </span> </p>
+                                <a href="#candies"><img class="responsive-img candy-img" src="../assets/img/product-candies.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="middle-cont">
+                    <img class="responsive-img" src="../assets/img/LG-32MP58HQ-P-1.png" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom-cont">
+                    <div class="col s12 left-align no-pad">
+                        <p class="product-brand" id="product-brand">LG <span style="font-size: 33px;">32 inches</span></p>
+                        <div class="treats-list">
+                            <ul>
+                                <li #mon1>32MP58HQ-P </li>
+                                <li>1080P</li>
+                                <li>Full HD IPS</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col s3 center-align no-pad">
+                        <button (click)="openOrderFormDialog({itemName:mon1.innerText})" class="btn waves-effect waves-light">
+                            Buy
+                        </button>
+                        <p class="prod-available">Available: <span>YES</span></p>
+                    </div> -->
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 products">
+        <div id="product-1" class="products-item">
+            <div class="container center products-item-content" >
+                <div class="row no-btm">
+                    <div class="treat-img">
+                        <div class="left">
+                            <a href="#treatsEx"><img src="../assets/img/product-treat-logo.png" class="responsive-img"></a>
+                        </div>
+                    </div>
+                    <div class="upper-cont">
+                        <div>
+                            <div class="right-align right">
+                                <p class= "crossed-out-price" id="crossed-out-price">Php 15,160.00</p>
+                                <div class="valign-wrapper right-align">
+                                    <div class="align-price">
+                                        <br/>
+                                        <p class="no-margin now">Steam sale now only</p>
+                                    </div>
+                                    <div>
+                                        <p class="recent-price" id="recent-price">Php 12,800.00</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="valign-wrapper right received-candies">
+                                    <p class="total-candies-rec">You get <span id="num-of-candies"> 60 </span> </p>
+                                    <a href="#candies"><img class="responsive-img candy-img" src="../assets/img/product-candies.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="middle-cont">
+                        <img class="responsive-img" src="../assets/img/LG-32MA70HY-P-1.png" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bottom-cont">
+                        <div class="col s9 left-align no-pad">
+                            <p class="product-brand" id="product-brand">LG <span style="font-size: 33px;">32 inches</span></p>
+                            <div class="treats-list">
+                                <ul>
+                                    <li #mon2>32MA70HY-P </li>
+                                    <li>1080P</li>
+                                    <li>32''</li>
+                                    <li>Full HD IPS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s3 center-align no-pad">
+                            <button  (click)="openOrderFormDialog({itemName:mon2.innerText})" class="btn waves-effect waves-light">
+                                Buy Now
+                            </button>
+                            <p class="prod-available">Available: <span>YES</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Monitor Ends-->

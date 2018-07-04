@@ -1,0 +1,56 @@
+
+img#HWS_logo_candy{
+    width: 50px;
+}
+
+.sm a{
+    padding:0 10px;
+}
+
+.mlogo{
+    position: relative;
+    padding:0;
+}
+
+
+.m-index{
+    background-color: #fafafa;
+    padding-top: 0;
+}
+.m-index line{
+    margin-bottom:0!important;
+}
+.m-index-line p{
+    font-size: 45px;
+    font-family: loveloblack;
+    margin: 0;
+    line-height: 40px;
+}
+.m-index-line p span{
+    font-size: 45px;
+    font-family: loveloline;
+}
+
+.bs-text{
+    background-color: #6525EC;
+}
+.best-sellers{
+    font-family: loveloblack;
+    color:white;
+}
+
+.m-best-items p,
+.m-best-items span,
+.m-item-title{
+    font-family: loveloblack;
+    font-size: 9px;
+}
+.m-best-items p{
+    margin:0!important;
+}
+.m-seemore{
+    font-family: loveloblack;
+    color:#6525EC;
+    
+}
+
