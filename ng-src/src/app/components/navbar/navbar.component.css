@@ -20,7 +20,7 @@ body>nav{
 nav.index_nav{ 
     height: 135px!important;
     padding: 20px 0;
-    min-width: 1366px;
+    min-width: 1024px;
     position: fixed;
     z-index:1000;
 }

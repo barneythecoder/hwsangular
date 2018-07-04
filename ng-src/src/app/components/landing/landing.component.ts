@@ -1,5 +1,6 @@
 import { Component, OnInit, enableProdMode, HostListener,  OnDestroy } from '@angular/core';
 import { MnFullpageService } from 'ngx-fullpage';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -7,9 +8,13 @@ import { MnFullpageService } from 'ngx-fullpage';
 })
 export class LandingComponent implements OnInit {
   public isScrolled: boolean;
-  constructor(private fp: MnFullpageService) { }
+  constructor(private fp: MnFullpageService,
+              private router: Router) { }
   
   ngOnInit() {
+    if(window.innerWidth<500){
+      this.router.navigate(['/mobile']);
+    }
   }
   ngOnDestroy(){
     this.fp.destroy('all');

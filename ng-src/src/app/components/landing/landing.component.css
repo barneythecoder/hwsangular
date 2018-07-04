@@ -1,5 +1,5 @@
 body{
-    min-width: 1280px;
+    min-width: 1024px;
     background-color: #fafafa!important;
     }
 nav{
@@ -24,7 +24,7 @@ nav{
 nav.index_nav{ 
     height: 135px!important;
     padding: 20px 0;
-    min-width: 1366px;
+    min-width: 1024px;
     position: fixed;
     z-index:1000;
 }
