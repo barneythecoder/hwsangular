@@ -16,13 +16,13 @@ nav{
 .treats-item-title{
     font-family: loveloblack;
     color:#fff;
-    font-size:15px;
+    font-size:18px;
     margin: 10px auto!important;
 }
 
-.treat-img, .CS-img {
+.treat-img, CS-img {
     position: absolute;
-    width: 12%;
+    width: 25%;
 }
 
 .crossed-out-price{
@@ -31,16 +31,24 @@ nav{
     font-family: loveloblack;
     font-size: 13px;
     margin: 0;
-    line-height: 14px;
-    padding-top: 17px;
+    line-height: normal;
     /*margin-bottom: 11px; */
 }
 
 .recent-price{
     color:#000;
     font-family: loveloblack;
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
+    /* line-height:14px; */
+}
+
+.no-margin{
+    margin:0; 
+}
+
+.align-price{
+    line-height: 1px
 }
 
 .products-item-content{
@@ -51,32 +59,75 @@ nav{
     margin-top:0!important;
     margin-bottom:0!important;
     font-family: loveloblack;
-    font-size: 25px;
+    font-size: 14px;
     line-height: 25px;
 }
-
+button{
+    width:100%;
+    font-family:loveloblack;
+    background-color: #663AF5;
+    border-radius: 20px;
+    height: 26px!important;
+    line-height: 0;
+}
 button a{
     color:#fff;
 }
 .no-pad{
-    padding:15px!important;
+    padding:0!important;
 }
 
 .treats-list ul{
     margin-top: 0!important;
+    line-height: 11px;
+    margin-bottom:0;
 }
 .treats-list li{
-    display:inline-block;
     font-family: loveloblack;
-    padding-right:12px;
-    font-size: 13px;
+    padding-right:5px;
+    font-size: 11px;
 }
 
+.total-candies-rec,.num-of-candies{
+    font-family: loveloblack;
+    font-size:9px;
+    margin: 0;
+}
+
+.received-candies{
+    margin-top:0!important;
+}
+.candy-img{
+    margin-left: 5px;
+    margin-right: 5px;
+    width:40%;
+}
+.prod-available{
+    margin:0;
+}
+
+.middle-cont{
+    margin-bottom:0!important;
+}
 /*Monitors*/
 .monitors{
     background-color: #1582D0!important;
 }
+.keyboards{
+    background-color: #94a7f4!important;
+}
 
+.ssd{
+    background-color: #19cc74!important;
+}
+
+.etc{
+    background-color: #4532dc!important;
+}
+
+.mobo{
+    background-color: #11bbdd!important;
+}
 
 
 @font-face {
