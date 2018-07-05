@@ -12,7 +12,7 @@ export class LandingComponent implements OnInit {
               private router: Router) { }
   
   ngOnInit() {
-    if(window.innerWidth<500){
+    if(window.innerWidth<1081){
       this.router.navigate(['/mobile']);
     }
   }
