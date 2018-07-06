@@ -1,6 +1,8 @@
 .m-treats a,
 .breadcrumb::before {
     color: #000!important;
+    font-size: 14px;
+    padding-left: 5px;
 }
 .m-treats{
     background-color: #fafafa;
@@ -11,6 +13,8 @@
 
 nav{
     box-shadow:none;
+    height: 44px;
+line-height: 44px;
 }
 
 .treats-item-title{
