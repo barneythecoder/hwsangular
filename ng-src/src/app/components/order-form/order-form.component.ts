@@ -46,7 +46,12 @@ export class OrderFormComponent implements OnInit {
 
   ngOnInit() {
    
-    
+    (<any>window).ga('send', 'event', {
+      eventCategory: 'Click',
+      eventLabel: 'Buy now',
+      eventAction: 'User clicked Buy Now button on product: '+this.items.itemName,
+      eventValue: 10
+    });
     
   }
   submit(form) {
@@ -62,7 +67,7 @@ export class OrderFormComponent implements OnInit {
     }else if(!custPhone || custPhone.length === 0 || /^\s*$/.test(custPhone)){
 
     }else{
-
+      
       this.items.customerName = form.controls.customerName.value;
       this.items.customerAddress = form.controls.customerAddress.value;
       this.items.customerNumber = form.controls.customerPhoneNumber.value;

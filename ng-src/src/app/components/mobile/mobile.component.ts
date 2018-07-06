@@ -10,6 +10,12 @@ export class MobileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    (<any>window).ga('send', 'event', {
+      eventCategory: 'Page View',
+      eventLabel: 'Mobile Visit',
+      eventAction: 'User redirected to mobile landing',
+      eventValue: 10
+    });
   }
 
 }

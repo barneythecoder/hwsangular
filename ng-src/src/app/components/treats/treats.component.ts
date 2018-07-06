@@ -60,6 +60,12 @@ export class TreatsComponent implements OnInit {
   }
 
   ngOnInit() {
+    (<any>window).ga('send', 'event', {
+      eventCategory: 'Page View',
+      eventLabel: 'Desktop Visit',
+      eventAction: 'User visitted products page',
+      eventValue: 10
+    });
   }
 
 }

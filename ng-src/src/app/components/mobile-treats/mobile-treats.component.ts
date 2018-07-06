@@ -54,6 +54,12 @@ export class MobileTreatsComponent implements OnInit {
       
     }
   ngOnInit() {
+    (<any>window).ga('send', 'event', {
+      eventCategory: 'Page View',
+      eventLabel: 'Mobile products page(Treats)',
+      eventAction: 'User tapped on see more button',
+      eventValue: 10
+    });
   }
 
 }
