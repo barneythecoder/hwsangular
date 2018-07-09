@@ -1,0 +1,77 @@
+
+nav{
+    box-shadow:none;
+    height: 44px;
+    line-height: 44px;
+}
+
+.m-candy{
+    background-color: #fafafa;
+    padding:0 0 0 5px;
+    font-family:loveloblack;
+    font-size:8px;
+}
+
+.m-logo{
+    width: 41px;
+    height: 50px;
+    padding: 13px 13px 0px 0px;
+}
+
+.m-candy-logo{
+    width:70%;
+}
+.icandy{
+    font-family: loveloblack;
+    font-size: 32.5px;
+    margin: 0;
+    line-height: 35px;
+}
+
+.icandy-cont{
+    font-family: robotoregular;
+    font-size: 13px;
+}
+.list{
+    position: relative;
+}
+ol{
+    padding: 0;
+}
+ol li{
+    color: #0088DD;
+    padding: 5px;
+    font-family: robotomedium;
+    text-align: center;
+    font-size: 13px;
+}
+
+button{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #0088DD;
+    color:#fff;
+    font-size: 15px;
+    font-family: loveloblack;
+    margin-top:20px;
+    clear: both;
+}
+
+@media screen and (max-width: 332px){
+    p.icandy-cont{
+        font-size:11.5px!important;
+        padding: 0px 4px;
+    }
+    .icandy{
+        font-size: 24.5px;
+        line-height: 25px;
+        margin-top:0;
+    }
+    ol{
+        padding-left: 20px;
+    }
+    ol li{
+        font-size:12px!important;
+        float: left;
+    }
+}
