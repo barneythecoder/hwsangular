@@ -29,6 +29,7 @@ import { OrderReceivedDialogComponent } from './components/order-received-dialog
 import { WhyusComponent } from './components/whyus/whyus.component';
 import { MobileComponent } from './components/mobile/mobile.component';
 import { MobileTreatsComponent } from './components/mobile-treats/mobile-treats.component';
+import { MobileCandyComponent } from './components/mobile-candy/mobile-candy.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
   {path: 'productpage', component: ProductpageComponent},
   {path: 'whyus', component: WhyusComponent},
   {path: 'mobile',component: MobileComponent},
-  {path: 'mobile/treats', component: MobileTreatsComponent}
+  {path: 'mobile/treats', component: MobileTreatsComponent},
+  {path: 'mobile/candy', component: MobileCandyComponent}
 ];
 
 @NgModule({
@@ -59,6 +61,7 @@ const appRoutes: Routes = [
     WhyusComponent,
     MobileComponent,
     MobileTreatsComponent,
+    MobileCandyComponent,
   ],
   imports:[
  CommonModule,
