@@ -30,6 +30,7 @@ import { WhyusComponent } from './components/whyus/whyus.component';
 import { MobileComponent } from './components/mobile/mobile.component';
 import { MobileTreatsComponent } from './components/mobile-treats/mobile-treats.component';
 import { MobileCandyComponent } from './components/mobile-candy/mobile-candy.component';
+import { MobileProductComponent } from './components/mobile-product/mobile-product.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent},
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
   {path: 'whyus', component: WhyusComponent},
   {path: 'mobile',component: MobileComponent},
   {path: 'mobile/treats', component: MobileTreatsComponent},
-  {path: 'mobile/candy', component: MobileCandyComponent}
+  {path: 'mobile/candy', component: MobileCandyComponent},
+  {path: 'mobile/products', component: MobileProductComponent}
 ];
 
 @NgModule({
@@ -62,6 +64,7 @@ const appRoutes: Routes = [
     MobileComponent,
     MobileTreatsComponent,
     MobileCandyComponent,
+    MobileProductComponent,
   ],
   imports:[
  CommonModule,
