@@ -2,10 +2,13 @@
     margin:0 auto;
 }
 .ws-bg{
-    background: #663AF5;
+    background-color: #663AF5;
 }
 
-.ws-title{
+row{
+    height:100%;
+}
+.ws-bg-title{
     font-family: loveloline;
     font-size: 11vmin;
     color: #fff;
@@ -13,17 +16,71 @@
     padding:20px 0 0 0;
 }
 
-.ws-big-text{
-    font-family: robotolight;
+.ws-msg{
+    font-family: robotoregular;
     font-size: 2.26667vmin;
     color: #fff;
-    padding: 20px 50px 0 50px;
+    padding: 20px 50px 20px 50px;
 }
 
 .nf{
     text-transform: uppercase;
     font-size: 2.8vmin;
     color:#fff;
+    font-family: robotoregular;
+    padding:0;
+}
+
+/* .ws-triangle{
+    height: 30px;
+    background-color: #663AF5;
+    padding:0;
+} */
+
+.triangle-topleft{ 
+    /* width: 0; 
+    border-top: 100px solid #663AF5; 
+    border-right: 100px solid transparent;
+    margin:0;  */
+    width: 0;
+    height: 0;
+    padding-bottom: 23%;
+    padding-left: 25%;
+    margin-left:0;
+    overflow: hidden;
+}
+
+.triangle-topleft:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 450px solid #663AF5;
+}
+
+.the-boss img{
+    padding: 20px;
+}
+
+.ws-sm-title{
+    font-family: loveloline;
+    color:#663AF5;
+    font-size:4.2vmin;
+    padding: 15px 0;
+    text-align:left;
+    line-height: normal;
+}
+.ws-con{
+    padding: 45px 20px;
+    font-size: 2.26667vmin;
     font-family: robotolight;
-    padding:20px 0;
+    text-align: justify;
+    color:#663AF5;
+    line-height:normal;
+}
+
+.box{
+    height: 506px;
 }
